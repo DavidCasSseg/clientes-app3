@@ -23,7 +23,7 @@ export class ClientesComponent implements OnInit{
   delete(cliente: Cliente): void{
     swal.fire({
   title: 'Esta seguro?',
-  text: "Seguro que desea eliminar al cliente ${cliente.nombre} ${cliente.apellido}!",
+  text: `Seguro que desea eliminar al cliente ${cliente.nombre} ${cliente.apellido}!`,
   icon: 'warning',
   showCancelButton: true,
   confirmButtonText: 'Si, eliminar!',
