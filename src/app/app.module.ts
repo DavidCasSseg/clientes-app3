@@ -11,6 +11,7 @@ import { RouterModule, Routes} from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormComponent } from './clientes/form.component';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes =[
   {path: '', redirectTo: '/clientes', pathMatch: 'full'},
@@ -30,6 +31,8 @@ const routes: Routes =[
     FormComponent
   ],
   imports: [
+    FormsModule,
+    CommonModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,
